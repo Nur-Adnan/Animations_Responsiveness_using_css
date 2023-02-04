@@ -4,17 +4,17 @@
   height: 700px;
   width: 500px;
   display: grid;
-  grid-template-rows: 30px 1fr 30px;
-  /* Here three rows, i use for 3 sections ->header,content,footer */
-  grid-template-columns: 100px 400px;
-  /* Here i use two column beacuse, one is for sidebar and 2nd one is for main content */
+  grid-template-rows: 30px 1fr 1fr 30px;
+  /* Here three rows, i use for 4 sections ->header,siderbar,content,footer */
+  grid-template-columns: 1fr;
+  /* Here i use single column */
   grid-gap: 5px;
   grid-template-areas:
-    "hd hd"
-    "side main"
-    "ft ft";
+    "hd"
+    "side "
+    "main"
+    "ft";
 }
-
 .box {
   border: 1px solid red;
   background-color: aqua;
